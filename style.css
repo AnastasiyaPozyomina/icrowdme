@@ -2,295 +2,445 @@ html,
 body {
     font-family: Helvetica, sans-serif;
     min-width: 260px;
+    margin: 0;
+    padding: 0;
 
 }
 
 .header {
-    position: sticky;
+    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
     background-color: pink;
-    padding: 26px 21px;
+
     height: 84px;
     display: block;
     background: white;
 }
+
 /* контейнер */
 .container {
     margin: 0 auto;
-    display:flex;
     max-width: 1025px;
 }
 
 /* меню */
+.top-menu {
+    padding: 15px 20px 15px 20px;
+    display: flex;
+}
+
 .menu-main {
-    font-size: 13px;
+    font-size: 25px;
     font-family: "OpenSans";
     list-style: none;
-    text-align: center;
-    margin:0 auto;
-   
-   
+    margin: 0 auto;
+
+
 }
 
 .menu-main ul {
     list-style: none;
-    margin: 0;
-    padding-left: 0;
+
 }
 
 .menu-main li {
     display: inline-block;
+    margin-right: 43px;
+    padding: 10px 10px 10px 10px;
+}
+
+.menu-main li:hover {
+    background-color: #bcda5c;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.54);
+}
+
+
+
+.menu-main a:hover {
+    color: #fff;
+
+
 }
 
 .menu-main a {
     display: inline-block;
     text-decoration: none;
     color: rgba(102, 102, 102, 0.671);
-   
+
 }
 
 /* Логотип */
 .navbar-logo {
     width: 215.25px;
-    height: 29px;
-    display:block;
+    height: 35px;
 }
 
-/* кнопка LOGIN */
-.nav-btn {
-    font-size: 13px;
-    font-family: "OpenSans";
-    color: rgba(255, 255, 255, 0.812);
-    text-align: center;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(112, 113, 115);
-    background-color: rgb(173, 209, 54);
-    opacity: 0.812;
-    width: 98px;
-    height: 35px;
-    padding:0 auto;
-display: block;
-}
+
 
 .shape {
-    width: 58px;
-    height: 58px;
-    
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 56px;
 }
 
 h1 {
-    font-size: 31px;
-  font-family: "Myriad Pro", Arial, Helvetica, sans-serif;
-  color: rgb(81, 81, 81);
-  text-transform: uppercase;
-  line-height: 1.603;
-  text-align: center;
+
+    font-size: 49.2px;
+    font-family: "Myriad Pro";
+    color: rgb(255, 255, 255);
+    line-height: 1.565;
+    text-align: center;
 }
+
 
 p {
-font-size: 19px;
-  font-family: "Myriad Pro";
-  color: rgba(81, 81, 81, 0.71);
-  line-height: 1.2;
-  text-align: center;
+    font-size: 19px;
+    font-family: "Myriad Pro";
+    color: rgba(81, 81, 81, 0.71);
+    line-height: 1.2;
+    text-align: center;
 }
 
-.section-first{
-display: inline;
-text-align: center;
+.section-first {
+    display: inline;
+    text-align: center;
 }
 
-.find{
-display:flex;
-flex-direction: row;
+.section-first>h2 {
+    text-transform: uppercase;
+    color: #515151;
+    font-size: 31px;
+    margin-bottom: 50px;
 }
 
-.properties{
+.section-first>p {
+    font-size: 19px;
+    font-family: "Myriad Pro";
+    color: rgba(81, 81, 81, 0.71);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.find {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.properties {
     background-color: #e2f8ff;
-    display:flex;
+    display: flex;
     flex-direction: row;
     padding-left: 136px;
-   
+    padding: 49.25px 60px 46px 224px;
 }
 
-.buyers{
+.buyers {
     background-color: #f5f9eb;
-    display:flex;
+    display: flex;
     flex-direction: row;
-   padding-right: 123px;
+    padding-right: 123px;
+    padding: 49.25px 60px 46px;
 }
 
-.find h2  {
-font-size: 23px;
-  font-family: "Montserrat";
-  color: rgb(81, 81, 81);
-  line-height: 1.2;
-  text-align: center;
+.find h2 {
+    font-size: 23px;
+    font-family: "Montserrat";
+    color: rgb(81, 81, 81);
+    line-height: 1.2;
+    text-align: center;
 }
 
+/* кнопки */
 .buy-btn {
     font-size: 19px;
     font-family: "OpenSans";
     color: rgb(255, 255, 255);
     line-height: 1.2;
     border-radius: 8px;
-  background-color: rgb(173, 209, 54);
-  width: 187px;
-  height: 51px;
-
+    background-color: rgb(173, 209, 54);
+    width: 187px;
+    height: 51px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
 }
 
 .prop-btn {
     font-size: 19px;
-  font-family: "OpenSans";
-  color: rgb(255, 255, 255);
-  line-height: 1.2;
-  border-radius: 8px;
-  background-color: rgb(38, 166, 209);
-  width: 187px;
-  height: 51px;
- 
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    border-radius: 8px;
+    background-color: rgb(38, 166, 209);
+    width: 187px;
+    height: 51px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 40px;
+}
+
+.sl-btn {
+    border-radius: 10px;
+    background-color: rgb(153, 197, 10);
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.54);
+    width: 254px;
+    height: 73px;
+    color: #fff;
+    font-size: 18px;
+
 }
 
 .money {
-height: 95px;
-width: 100px;
+    height: 95px;
+    width: 100px;
 }
 
 .sofa {
     height: 115px;
-    width: 120px; 
+    width: 120px;
+}
+
+.title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    margin-top: 200px;
+
+}
+
+.slider {
+    position: relative;
+
 }
 
 .slider img {
-  min-width: 100%;
+    min-width: 100%;
     height: 570px;
 }
 
 /* вкладки */
 /* Базовый контейнер табов */
 .tabs {
-	width: 100%;
-	padding: 0px;
-	margin: 0 auto;
+    width: 100%;
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
+
+
 /* Стили секций с содержанием */
 .tabs>section {
-	display: none;
-	padding: 15px;
-	background: #fff;
-	border: 1px solid #ddd;
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
 }
+
 .tabs>section>h2 {
-color: #add136;
--webkit-animation-duration: 1s;
-animation-duration: 1s;
--webkit-animation-fill-mode: both;
-animation-fill-mode: both;
--webkit-animation-name: fadeIn;
-animation-name: fadeIn;
+    color: #add136;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
+
 .tabs>section>p {
-	margin: 0 0 5px;
-	line-height: 1.5;
-	color: #606060;
-	/* прикрутим анимацию */
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
-	-webkit-animation-name: fadeIn;
-	animation-name: fadeIn;
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #606060;
+    /* прикрутим анимацию */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
 }
+
 /* Описываем анимацию свойства opacity */
- 
+
 @-webkit-keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
 /* Прячем чекбоксы */
 .tabs>input {
-	display:none;
-	position: absolute;
+    display: none;
+    position: absolute;
 }
+
 /* Стили переключателей вкладок (табов) */
 .tabs>label {
-	display: inline-block;
-	margin: 0 0 -1px;
-	padding: 15px 25px;
-	font-weight: 600;
-	text-align: center;
-	color: #656565;
-	border: 0px solid #ddd;
-	border-width: 1px 1px 1px 1px;
-	background: #f1f1f1;
-	border-radius: 3px 3px 0 0;
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 25px 65.5px;
+    font-weight: 600;
+    text-align: center;
+    color: #656565;
+    border: 0px solid #ddd;
+    border-width: 1px 1px 1px 1px;
+    background: #f1f1f1;
+    border-radius: 3px 3px 0 0;
+    width: 20.069%;
 }
+
 /* Шрифт-иконки от Font Awesome в формате Unicode */
 .tabs>label:before {
-	font-family: fontawesome;
-	font-weight: normal;
-	margin-right: 10px;
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
 }
+
 .tabs>label[for*="1"]:before {
-	content: "\f004";
+    content: "\f004";
 }
+
 .tabs>label[for*="2"]:before {
-	content: "\f1b9";
+    content: "\f1b9";
 }
+
 .tabs>label[for*="3"]:before {
-	content: "\f0f5";
+    content: "\f0f5";
 }
 
 /* Изменения стиля переключателей вкладок при наведении */
- 
+
 .tabs>label:hover {
-	color: #888;
-	cursor: pointer;
+    color: #888;
+    cursor: pointer;
 }
+
 /* Стили для активной вкладки */
 .tabs>input:checked+label {
-	color: #555;
-	border-top: 1px solid #009933;
-	border-bottom: 1px solid #fff;
-	background: #fff;
+    color: #555;
+    border-top: 1px solid #009933;
+    border-bottom: 1px solid #fff;
+    background: #fff;
 }
+
 /* Активация секций с помощью псевдокласса :checked */
-#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3 {
-	display: block;
+#tab1:checked~#content-tab1,
+#tab2:checked~#content-tab2,
+#tab3:checked~#content-tab3 {
+    display: block;
 }
+
 /* Убираем текст с переключателей 
 * и оставляем иконки на малых экранах
 */
- 
+
 @media screen and (max-width: 680px) {
-	.tabs>label {
-		font-size: 0;
-	}
-	.tabs>label:before {
-		margin: 0;
-		font-size: 18px;
-	}
+    .tabs>label {
+        font-size: 0;
+    }
+
+    .tabs>label:before {
+        margin: 0;
+        font-size: 18px;
+    }
 }
+
 /* Изменяем внутренние отступы 
 *  переключателей для малых экранов
 */
 @media screen and (max-width: 400px) {
-	.tabs>label {
-		padding: 15px;
-	}
+    .tabs>label {
+        padding: 15px;
+    }
 }
+
+/* community */
+.community {
+    background-image: url(img/bg-community.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.community h2 {
+    color: #9ec02d;
+    font-size: 31px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.community p {
+    font-size: 19px;
+    font-family: "Myriad Pro";
+    color:#949494;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+/* диалоги */
+.speech {
+    display: flex;
+    padding-top: 300px;
+    justify-content:space-between;
+}
+.speech-bubble {
+    position: relative;
+    background-color:#ffffff;
+    width: 467px;
+    height: 196px;
+    line-height: 150px;
+    color: #848484;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 15px solid;
+}
+
+/* стрелка диалога */
+.speech-bubble-bottom:after {
+    border-top-color: red;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+
+}
+
+
+
+

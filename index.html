@@ -20,40 +20,46 @@
 </head>
 
 <body>
-
     <header class="header">
         <nav class="top-menu">
-            <div class="container">
-                <img class="navbar-logo" src="img/Logo.png" alt="logo">
-                <ul class="menu-main">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">HOW IT WORKS </a></li>
-                    <li><a href="#"> DISCOVER A PROJECT </a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">FIND OUT MORE</a></li>
-                </ul>
-                <button class="nav-btn">LOGIN</button>
-            </div>
+            <img class="navbar-logo" src="img/Logo.png" alt="logo">
+            <ul class="menu-main">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HOW IT WORKS </a></li>
+                <li><a href="#"> DISCOVER A PROJECT </a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">FIND OUT MORE</a></li>
+            </ul>
         </nav>
-
     </header>
-    <div class="slider">
-        <div><img src="img/slider-img1.png" title="Funky roots"></div>
-        <div><img src="img/Australia_Houses_Rivers_Evening_Riverboat_Sydney_545092_1280x853.jpg"
-                title="The long and winding road"></div>
-        <div><img src="img/Belgium_Houses_Bruges_Canal_Street_562087_1280x853.jpg" title="Happy trees"></div>
-        <div><img src="img/Germany_Winter_Houses_Oybin_Snow_Street_Night_560766_1280x717.jpg" title="Happy trees"></div>
-        <div><img src="img/USA_Disneyland_Parks_Castles_Evening_California_561038_1280x852.jpg" title="Happy trees">
-        </div>
-    </div>
-
 
     <main class="main">
+        <div class="slider-wrapper">
+            <div class="title">
+                <h1>Intellectual Property has the Shelf Life
+                    <br>of a Banana.</h1>
+                <button class="sl-btn">Become A Member</button>
+            </div>
+            <div class="slider">
+                <div><img src="img/slider-img1.png" title="Funky roots"></div>
+                <div><img src="img/Australia_Houses_Rivers_Evening_Riverboat_Sydney_545092_1280x853.jpg"
+                        title="The long and winding road"></div>
+                <div><img src="img/Belgium_Houses_Bruges_Canal_Street_562087_1280x853.jpg" title="Happy trees"></div>
+                <div><img src="img/Germany_Winter_Houses_Oybin_Snow_Street_Night_560766_1280x717.jpg"
+                        title="Happy trees">
+                </div>
+                <div><img src="img/USA_Disneyland_Parks_Castles_Evening_California_561038_1280x852.jpg"
+                        title="Happy trees">
+                </div>
+            </div>
+        </div>
+
+
         <div class="container">
             <div class="section-first">
                 <img class="shape" src="img/Shape .png" alt="shape">
-                <h1>Our work is the presentation
-                    of our capabilities.</h1>
+                <h2>Our work is the presentation<br>
+                    of our capabilities.</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
@@ -63,38 +69,46 @@
                     velit esse cillum dolore eu fugiat nulla pariatur. </p>
             </div>
         </div>
+
         <!-- вкладка -->
         <div class="container">
-        <div class="tabs">
-            <input id="tab1" type="radio" name="tabs" checked>
-            <label for="tab1" title="Вкладка 1">Simple</label>
+            <div class="tabs">
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1" title="Вкладка 1">Simple</label>
 
-            <input id="tab2" type="radio" name="tabs">
-            <label for="tab2" title="Вкладка 2">Transparent</label>
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2" title="Вкладка 2">Transparent</label>
 
-            <input id="tab3" type="radio" name="tabs">
-            <label for="tab3" title="Вкладка 3">Collaborative</label>
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3" title="Вкладка 3">Collaborative</label>
 
-            <section id="content-tab1">
-                <h2>Browse projects, like booking a hotel online !</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat..
-                </p>
-            </section>
-            <section id="content-tab2">
-                <p>
-                    Здесь размещаете любое содержание....
-                </p>
-            </section>
-            <section id="content-tab3">
-                <p>
-                    Здесь размещаете любое содержание....
-                </p>
-            </section>
+                <section id="content-tab1">
+                    <div><img src="img/glasses.png" alt=""></div>
+                    <div>
+                        <h2>Browse projects, like booking a hotel online !</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore
+                            et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi
+                            ut
+                            aliquip ex ea commodo consequat..
+                        </p>
+                    </div>
+                </section>
+                <section id="content-tab2">
+                    <p>
+                        Здесь размещаете любое содержание....
+                    </p>
+                </section>
+                <section id="content-tab3">
+                    <p>
+                        Здесь размещаете любое содержание....
+                    </p>
+                </section>
+            </div>
         </div>
-    </div>
 
         <div class="find">
             <div class="properties">
@@ -117,14 +131,36 @@
             </div>
         </div>
     </main>
-    <div>
 
-    </div>
 
-    <div class="video">
-        <iframe width="500" height="300" src="http://www.youtube.com/embed/ysSxxIqKNN0" frameborder="0"
-            allowfullscreen></iframe>
+
+
+    <div class="cards"></div>
+
+
+    <div class="community">
+        <div class="container">
+            <h2>Be Part of a Growing International Community</h2>
+            <p>One of the challenges in networking is everybody thinks it's making cold calls to strangers. Actually,
+                it's the people who already have strong trust relationships with you</p>
+            <div class="speech">
+                <div class="speech-first">
+                    <div class="speech-bubble speech-bubble-bottom"><h2>One of the Best</h2></div>
+                        <p> <img src="img/testii-1.png" alt="">David Beckham</p>
+                </div>
+                <div class="speech-second">
+                    <div class="speech-bubble speech-bubble-bottom"><h2>One of the Best</h2></div>
+                        <p><img src="img/testii-2.png" alt="">David Beckham </p>
+                </div>
+
+            </div>
+        </div>
     </div>
+   
+
+
+
+
 </body>
 
 
