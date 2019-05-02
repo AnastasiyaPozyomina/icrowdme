@@ -390,20 +390,11 @@ p {
 .community h2 {
     color: #9ec02d;
     font-size: 31px;
-    margin-top: 90px;
-    margin-bottom: 50px;
+    padding-top: 49px;
     text-align: center;
     line-height: 1.2;
-}
-
-.community p {
-    font-size: 19px;
-    font-family: "Myriad Pro";
-    color:#949494;
-    line-height: 1.2;
-    text-align: center;
-    margin-bottom: 35px;
-    text-align: center;
+  
+    
 }
 
 /* диалоги */
@@ -417,29 +408,81 @@ p {
     background-color:#ffffff;
     width: 467px;
     height: 196px;
-    line-height: 150px;
-    color: #848484;
-    text-align: center;
     border-radius: 20px;
+    display:none;
 
 }
 
 .speech-bubble:after {
     content: '';
     position: absolute;
-    width: 0;
-    height: 0;
-    border: 15px solid;
+    width: 85px;
+    height: 45px;
+    border-bottom-right-radius: 100px 60px;
+    border-bottom: 0px solid #ffffff;
+    border-right: 20px solid #ffffff;
+    box-shadow: 20px 0px 0px #ffffff;
 }
 
 /* стрелка диалога */
 .speech-bubble-bottom:after {
-    border-top-color: red;
+   
     top: 100%;
     left: 50%;
     margin-left: -15px;
 
 }
+
+#speech-bubble-first p,
+#speech-bubble-second p {
+display:none;
+font-size: 19px;
+    font-family: "Myriad Pro";
+    color: #949494;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+.card-first {
+height: 518px;
+width: 298px;
+border-radius: 20px;
+position: relative;
+}
+
+.card-first:before {
+    content:'';
+    background-image: url(../icrowdme/img/NEW.png);
+    position: absolute;
+    border: 35px solid transparent;
+    border-left: 35px solid green;
+    border-top: 35px solid green;
+    border-top-left-radius: 15px;
+
+}
+
+
+
+    
+
+
+.card-first img {
+    width: 100%;
+    font-size: 17px;
+    font-family: "OpenSans";
+    color: rgb(72, 72, 72);
+    font-weight: bold;
+    line-height: 1.2;
+    }
+
+
+.card-content {
+padding:27px 22.5px 50.5px 19.5px;
+text-align: left;
+
+}
+
 
 
 

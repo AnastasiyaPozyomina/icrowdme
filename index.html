@@ -135,8 +135,19 @@
 
 
 
-    <div class="cards"></div>
-
+    <div class="cards">
+        <div class="container">
+            <div class="card-first card-first-text">
+                <img src="img/cards first.png" alt="">
+                <div class="card-content">
+                    <h3>Ontario Tower , LONDON</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="community">
         <div class="container">
@@ -145,19 +156,34 @@
                 it's the people who already have strong trust relationships with you</p>
             <div class="speech">
                 <div class="speech-first">
-                    <div class="speech-bubble speech-bubble-bottom"><h2>One of the Best</h2></div>
-                        <p> <img src="img/testii-1.png" alt="">David Beckham</p>
+                    <div class="speech-bubble speech-bubble-bottom" id="speech-bubble-first">
+                        <h2>One of the Best</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <p> <img src="img/testii-1.png" alt="">David Beckham</p>
                 </div>
                 <div class="speech-second">
-                    <div class="speech-bubble speech-bubble-bottom"><h2>One of the Best</h2></div>
-                        <p><img src="img/testii-2.png" alt="">David Beckham </p>
+                    <div class="speech-bubble speech-bubble-bottom" id="speech-bubble-second">
+                        <h2>Exellent Service </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod taempor incididunt
+                            ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <p><img src="img/testii-2.png" alt="">David Beckham </p>
                 </div>
 
             </div>
         </div>
     </div>
-   
 
+    <script>
+        $("#speech-bubble-first").fadeIn(1000);
+        $("#speech-bubble-first h2").fadeIn(4000);
+        $("#speech-bubble-first p").fadeIn(5000);
+        $("#speech-bubble-second").fadeIn(1000);
+        $("#speech-bubble-second h2").fadeIn(4000);
+        $("#speech-bubble-second p").fadeIn(5000);
+    </script>
 
 
 
