@@ -26,9 +26,16 @@ body {
 }
 
 /* меню */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
 .top-menu {
     padding: 15px 20px 15px 20px;
     display: flex;
+    
 }
 
 .menu-main {
